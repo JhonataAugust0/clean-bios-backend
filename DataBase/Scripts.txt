@@ -1,0 +1,17 @@
+CREATE DATABASE INERTIA;
+
+USE INERTIA;
+
+CREATE TABLE Usuario (
+	id INT(9) NOT NULL PRIMARY KEY auto_increment,
+    nome varchar(200),
+    login varchar(200),
+    senha varchar(200),
+    data_nascimento Date
+);
+
+CREATE TABLE Agendamento (
+    id INT(9) NOT NULL PRIMARY KEY auto_increment,
+    data DateTime,
+    servico varchar(200)
+);

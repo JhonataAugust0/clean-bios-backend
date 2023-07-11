@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jhonata/Documentos/técnico/PI/CleanBios/Backend/CleanBios.csproj": {}
+  },
+  "projects": {
+    "/home/jhonata/Documentos/técnico/PI/CleanBios/Backend/CleanBios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jhonata/Documentos/técnico/PI/CleanBios/Backend/CleanBios.csproj",
+        "projectName": "CleanBios",
+        "projectPath": "/home/jhonata/Documentos/técnico/PI/CleanBios/Backend/CleanBios.csproj",
+        "packagesPath": "/home/jhonata/.nuget/packages/",
+        "outputPath": "/home/jhonata/Documentos/técnico/PI/CleanBios/Backend/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jhonata/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.19, 6.0.19]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.119/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

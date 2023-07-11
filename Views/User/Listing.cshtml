@@ -1,0 +1,27 @@
+@model List<UserModel>
+@{
+  ViewData["Title"] = "Lista de usuários";
+}
+
+<table class="table">
+  <tr>
+    <td scope="row">Id</td>
+    <td scope="row">Nome</td>
+    <td scope="row">Data de nascimento</td>
+    <td scope="row">Operações</td>    
+  </tr>
+
+  @foreach (UserModel user in Model){
+    <tr>
+      <td>@user.id</td>
+      <td>@user.name</td>
+      <td>@user.dateNescient.ToShortDateString();</td>
+      <td>
+        <a href="/User/Remove?id=@user.id" onclick="return confirm('Deseja excluir?');">Remover</a>
+        <a href="/User/Edit?id=@user.id">Alterar</a>
+      </td>
+    </tr>
+  }
+</table>
+
+<a href="/User/Register" class="btn btn-primary">Cadastro</a>

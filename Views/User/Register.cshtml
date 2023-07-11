@@ -1,0 +1,34 @@
+@model UserModel
+@{
+  ViewData["Title"] = "Cadastro de usuário";
+}
+
+<h2>Cadastro de usuário</h2>
+
+<p id="pMensagem" class="alert alert-success">@ViewBag.Mensagem</p>
+
+<form asp-action="Register" method="POST">
+  <p>
+    <label asp-for="name">Nome:</label>
+    <input asp-for="name" />
+  </p>
+
+  <p>
+    <label asp-for="login">login:</label>
+    <input asp-for="login" />
+  </p>
+  
+  <p>
+    <label asp-for="password">Senha:</label>
+    <input asp-for="password" />
+  </p>
+
+  <p>
+    <label asp-for="dateNescient">Data de nascimento:</label>
+    <input asp-for="dateNescient" type="Date"/>
+  </p>
+
+  <p>
+    <input type="submit" value="Cadastrar" />
+  </p>
+</form>

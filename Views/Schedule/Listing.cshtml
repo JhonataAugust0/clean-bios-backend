@@ -1,0 +1,27 @@
+@model List<ScheduleModel>
+@{
+  ViewData["Title"] = "Lista de agendamentos";
+}
+
+<table class="table">
+  <tr>
+    <td scope="row">Id</td>
+    <td scope="row">Dia</td>
+    <td scope="row">Serviço</td> 
+    <td scope="row"> Operações</td>
+  </tr>
+
+  @foreach (ScheduleModel schedule in Model){
+    <tr>
+      <td>@schedule.id</td>
+      <td>@schedule.dia</td>
+      <td>@schedule.servico</td>
+      <td>
+        <a href="/Schedule/Remove?id=@schedule.id" onclick="return confirm('Deseja excluir?');">Remover</a>
+        <a href="/Schedule/Edit?id=@schedule.id">Alterar</a>
+      </td>
+    </tr>
+  }
+</table>
+
+<a href="/Schedule/Register" class="btn btn-primary">Agende aqui</a>

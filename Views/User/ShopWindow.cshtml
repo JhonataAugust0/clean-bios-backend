@@ -1,0 +1,19 @@
+@model List<UserModel>
+@{
+  ViewData["Title"] = "Vitrine de usuários";
+}
+
+<table class="table">
+  <tr>
+    <td scope="row">Nome</td>
+    <td scope="row">Data de nascimento</td>
+  </tr>
+
+  @foreach (UserModel user in Model){
+    <tr>
+      <td>@user.name</td>
+      <td>@user.dateNescient.ToShortDateString();</td>
+    </tr>
+  }
+</table>
+

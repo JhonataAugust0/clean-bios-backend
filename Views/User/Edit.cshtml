@@ -1,0 +1,34 @@
+@model UserModel
+@{
+  ViewData["Title"] = "Edição de usuário";
+}
+
+<h2>Ediçãoo de usuário</h2>
+
+<p id="pMensagem" class="alert alert-success">@ViewBag.Mensagem</p>
+<form asp-action="Edit" method="POST">
+  <p>
+    <label asp-for="name">Nome:</label>
+    <input asp-for="name" />
+  </p>
+
+  <p>
+    <label asp-for="login">login:</label>
+    <input asp-for="login" />
+  </p>
+  
+  <p>
+    <label asp-for="name">Senha:</label>
+    <input asp-for="name" />
+  </p>
+
+  <p>
+    <label asp-for="dateNescient">Data de nascimento:</label>
+    <input asp-for="dateNescient" type="Date"/>
+  </p>
+
+  <p>
+    <input asp-for="id" type="hidden" />
+    <input type="submit" value="Editar" />
+  </p>
+</form>

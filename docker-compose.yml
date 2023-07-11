@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  backend:
+    build:
+      context: Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    networks:
+      - mysql-network

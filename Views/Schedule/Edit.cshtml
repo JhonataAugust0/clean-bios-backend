@@ -1,0 +1,20 @@
+@model ScheduleModel
+@{
+  ViewData["Title"] = "Edição de agendamento";
+}
+
+<h2>Edição de agendamento</h2>
+
+<p id="pMensagem" class="alert alert-success">@ViewBag.Mensagem</p>
+<form asp-action="Edit" method="POST">
+  <p>
+    <label asp-for="dia">Dia:</label>
+    <input type="date" asp-for="dia" />
+  </p>
+
+  <p>
+    <label asp-for="servico">Serviço:</label>
+    <input asp-for="servico" />
+  </p>
+
+</form>

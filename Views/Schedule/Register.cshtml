@@ -1,0 +1,24 @@
+@model ScheduleModel
+@{
+  ViewData["Title"] = "Cadastro de serviço";
+}
+
+<h2>Agendamento de serviço</h2>
+
+<p id="pMensagem" class="alert alert-success">@ViewBag.Mensagem</p>
+
+<form asp-action="Register" method="POST">
+  <p>
+    <label asp-for="dia">Dia:</label>
+    <input type="datetime" asp-for="dia" />
+  </p>
+
+  <p>
+    <label asp-for="servico">Serviço:</label>
+    <input asp-for="servico" />
+  </p>
+  
+  <p>
+    <input type="submit" value="Cadastrar" />
+  </p>
+</form>
