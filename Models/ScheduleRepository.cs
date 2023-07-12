@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Backend{
   public class ScheduleRepository{
-    private const string ConnectUrl = "Database=Inertia;Data Source=172.24.0.1;User Id=root;Password=1234";
+    private const string ConnectUrl = "Database=railway;Data Source=containers-us-west-31.railway.app;User Id=root;Password=Pf95OimosEw3IU7oUcfF;Port=6050";
 
     public void connectDb(){
       MySqlConnection connection = new MySqlConnection(ConnectUrl);
