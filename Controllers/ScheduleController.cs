@@ -21,7 +21,7 @@ namespace Backend.Controllers
             ScheduleRepository scheduleEntity = new ScheduleRepository();
             schedule.id = i;
             scheduleEntity.insertNewSchedule(schedule);
-            return Json(new { mensagem = "Cadastro realizado com sucesso" });
+            return Json(new { mensagem = "Agendamento realizado com sucesso" });
         }
 
 

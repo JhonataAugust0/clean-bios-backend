@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Backend{
   public class UserRepository{
-    private const string ConnectUrl = "Database=railway;Data Source=containers-us-west-31.railway.app;User Id=root;Password=Pf95OimosEw3IU7oUcfF;Port=6050";
+    private const string ConnectUrl = "Database=railway;Data Source=containers-us-west-60.railway.app;User Id=root;Password=CmB4Dp3eKBtag2ufH4EJ;Port=7292";
 
     public void connectDb(){
       MySqlConnection connection = new MySqlConnection(ConnectUrl);
