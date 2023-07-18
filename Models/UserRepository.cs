@@ -86,7 +86,7 @@ namespace Backend{
       MySqlConnection connection = new MySqlConnection(ConnectUrl);
       connection.Open();
 
-      String query = "USE Inertia; SELECT * FROM Usuario;";
+      String query = "USE railway; SELECT * FROM Usuario;";
       MySqlCommand command = new MySqlCommand(query, connection);
       MySqlDataReader reader = command.ExecuteReader();
 
